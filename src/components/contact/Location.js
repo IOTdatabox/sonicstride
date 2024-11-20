@@ -5,7 +5,7 @@ import Badge from "../Badge";
 
 const Location = () => {
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-[url('/img/home/light-gradient.jpg')] bg-cover bg-no-repeat">
       <div className="container max-w-[1440px] px-5 py-[40px] sm:py-[100px] mx-auto lg:px-10 xl:px-[63px]">
         <div className="flex flex-col items-center justify-center mb-[50px]">
           <div className="mb-[10px]">
@@ -31,9 +31,8 @@ const Location = () => {
                 UK
               </h3> */}
               <p className="flex flex-col text-[13px] sm:text-[16px] xl:text-[18px] leading-[21px] sm:leading-[26px] xl:leading-[28px] lato-font text-secondaryColor">
-                <span>14 Egremont Avenue,</span>
-                <span> Manchester, United Kingdom,</span>
-                <span>M20 1GS</span>
+                <span>No.26, Ln. 218, Sec. 5, Roosevelt Rd., Wenshan Dist., </span>
+                <span>Taipei City, Taiwan, 116</span>
               </p>
               <div>
                 <Link

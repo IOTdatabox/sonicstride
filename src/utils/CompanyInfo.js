@@ -1,19 +1,17 @@
-export const companyTitle = 'Frienzy';
-export const phoneNumber = ['+1 214-300-1455'];
-export const siteAddress = 'https://www.frienzy.io/';
+export const companyTitle = 'SonicsTride';
+export const phoneNumber = ['+1 555-555-5555'];
+export const siteAddress = 'https://www.sonicstride.com/';
 export const contactEmail = [
-    'james@frienzy.io'
+    'jasmineow13@gmail.com'
 ];
-export const location = ['Dallas, Texas'];
+export const location = ['Nantou County, Taiwan'];
 
 export const siteDesc =
-    "Transform your group travel with Frienzy: Plan, connect, and capture moments effortlessly. Your journey, elevated! Whether it's a weekend getaway, a dream vacation, or a group event, Frienzy brings you closer together and makes travel planning a breeze.";
+    "Experience music that adapts to your physical and mental rhythms with Sonicstride";
 
 export const defaultKeywords =
-    'Frienzy, Travel App, Group Travel App, Journey App, Connect People';
+    'Sonicstride, Music App, Wellness Music App, Sports Music, Meditation Music, Motivate People';
 
-export const summaryImagePath =
-    '/images/splash.png';
 
 export const languages = {
     en: 'English'
@@ -27,7 +25,7 @@ export const externalLinks = {
     youtube: 'https://www.youtube.com',
 };
 
-export const googlePlayUrl = 'https://play.google.com/store/apps/details?id=com.frienzy.app';
-export const appleStoreUrl = 'https://apps.apple.com/us/app/frienzy-event-friend-tracker/id6446246578'
-export const productHuntUrl = 'https://www.producthunt.com/posts/frienzy?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-frienzy';
-export const youtubeUrl = 'https://www.youtube.com/embed/--IuIhC4vOw';
+export const googlePlayUrl = 'https://play.google.com/store/apps/';
+export const appleStoreUrl = 'https://apps.apple.com/us/app/'
+export const productHuntUrl = 'https://www.producthunt.com/posts/';
+export const youtubeUrl = 'https://www.youtube.com/embed/';

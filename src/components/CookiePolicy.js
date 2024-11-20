@@ -97,7 +97,7 @@ const CookiePolicy = () => {
             </li>
             <li>
               <p className="p-paragraph !my-0">
-                <strong>Address:</strong> Zhushan Township, Nantou County, Taiwan, 557
+                <strong>Address:</strong> No.26, Ln. 218, Sec. 5, Roosevelt Rd., Wenshan Dist., Taipei City 116, Taiwan
               </p>
             </li>
           </ul>

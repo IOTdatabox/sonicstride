@@ -4,7 +4,7 @@ import Badge from "../Badge";
 
 const ContactInformation = () => {
   return (
-    <div className="w-full bg-morningMist">
+    <div className="w-full bg-morningMist bg-[url('/img/home/light-gradient.jpg')] bg-cover bg-no-repeat">
       <div className="container max-w-[1440px] px-5 py-[40px] sm:py-[100px] mx-auto lg:px-10 xl:px-[63px]">
         <div className="flex flex-col items-start lg:items-center justify-center gap-[10px] mb-[20px] lg:mb-[50px]">
           <div className="">
@@ -41,7 +41,7 @@ const ContactInformation = () => {
                   For any inquiries, please contact:
                 </p>
                 <p className="futura-normal font-medium text-[16px] sm:text-[22px] lg:text-[20px] xl:text-[22px] leading-[24.3px] sm:leading-[32px] lg:leading-[30px] xl:leading-[32px] text-primaryColor">
-                  <a href="mailto:hello@sailwayz.com">hello@sailwayz.com</a>
+                  <a href="mailto:jasmineow13@gmail.com">jasmineow13@gmail.com</a>
                 </p>
               </div>
             </div>
@@ -66,7 +66,7 @@ const ContactInformation = () => {
                   For any inquiries, please contact:
                 </p>
                 <p className="futura-normal font-medium text-[16px] sm:text-[22px] lg:text-[20px] xl:text-[22px] leading-[24.3px] sm:leading-[32px] lg:leading-[30px] xl:leading-[32px] text-primaryColor">
-                  +1 (555) 123-4567
+                  +1 (555) 555-5555
                 </p>
               </div>
             </div>
@@ -91,9 +91,9 @@ const ContactInformation = () => {
                   Get Directions
                 </p>
                 <p className="futura-normal font-medium text-[16px] sm:text-[22px] lg:text-[20px] xl:text-[22px] leading-[24.3px] sm:leading-[32px] lg:leading-[30px] xl:leading-[32px] text-primaryColor">
-                  14 Egremont Avenue,
-                  <br /> Manchester,
-                  <br /> United Kingdom, M20 1GS
+                  No.26, Ln. 218, Sec. 5, Roosevelt Rd., Wenshan Dist.,
+                  <br /> Taipei City,
+                  <br /> Taiwan, 116
                 </p>
               </div>
             </div>

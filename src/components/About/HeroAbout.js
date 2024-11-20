@@ -28,13 +28,6 @@ const HeroAbout = () => {
           <div className="flex flex-col gap-2.5 sm:gap-5 sm:flex-row sm:items-center">
             <a
               className="bg-primaryPink hover:bg-secondaryPink transition-button px-[30px] py-[9px] sm:py-[14px] text-[12px] sm:text-[16px] text-center leading-[24px] sm:leading-[26px] font-bold futura-bold rounded-[160px] text-white tracking-wide max-sm:w-full cursor-pointer"
-              href="/services"
-              aria-label="redirect to service page"
-            >
-              LEARN MORE
-            </a>
-            <a
-              className="bg-primaryBlue hover:bg-secondaryBlue transition-button px-[30px] py-[9px] sm:py-[14px] text-[12px] sm:text-[16px] text-center leading-[24px] sm:leading-[26px] font-bold futura-bold rounded-[160px] text-white tracking-wide max-sm:w-full cursor-pointer"
               onClick={freeConsultationClick}
               aria-label="redirect to consultation form"
             >

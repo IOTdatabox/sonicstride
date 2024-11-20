@@ -66,7 +66,7 @@ const PrivacyPolicy = () => {
                 <strong>Company</strong> (referred to as either &ldquo;the
                 Company&rdquo;, &ldquo;We&rdquo;, &ldquo;Us&rdquo; or
                 &ldquo;Our&rdquo; in this Agreement) refers to SonicsTride LIMITED,
-                Zhushan Township, Nantou County, Taiwan, 557.
+                No.26, Ln. 218, Sec. 5, Roosevelt Rd., Wenshan Dist., Taipei City 116, Taiwan
               </p>
             </li>
             <li>

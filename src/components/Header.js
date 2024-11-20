@@ -97,29 +97,29 @@ const Header = () => {
                     <ul className="p-2">
                       <li>
                         <Link
-                          href={"/vaioni-group"}
+                          href={"/"}
                           className="block hover:bg-[#00b2ffb3] p-2 rounded"
-                          aria-label="redirect to vaioni-group page"
+                          aria-label="redirect to case study 1 page"
                         >
-                          Vaioni Group
+                          Case Study 1
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href={"/shoppertainment-management"}
+                          href={"/"}
                           className="block p-2 rounded hover:bg-primaryBlue"
-                          aria-label="redirect to shoppertainment page"
+                          aria-label="redirect to case study 2 page"
                         >
-                          Shoppertainment Management
+                          Case Study 2
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href={"/sbfm"}
+                          href={"/"}
                           className="block hover:bg-[#00b2ffb3] p-2 rounded"
-                          aria-label="redirect to sbfm page"
+                          aria-label="redirect to case study 3 page"
                         >
-                          SBFM
+                          Case Study 3
                         </Link>
                       </li>
                     </ul>
@@ -167,15 +167,16 @@ const Header = () => {
       >
         <div className="flex flex-col items-center justify-center h-full">
           <div className="absolute top-5 flex items-center justify-between w-full px-[50px]">
-            <Link href={"/"} aria-label="redirect to home page">
+            <Link href={"/"} aria-label="redirect to home page" className="flex items-center justify-center gap-2">
               <Image
                 src={"/img/home/main-logo.svg"}
                 alt="logo"
-                width={130}
+                width={20}
                 height={20}
                 loading="lazy"
-                className="w-[125px] h-[20px] filter invert"
+                className="w-[20px] h-[20px] filter invert"
               />
+              <span className="block text-xl text-white">Sonicstride</span>
             </Link>
             {/* {/ Close Button /} */}
             <button
@@ -221,23 +222,23 @@ const Header = () => {
               <ul className="hidden group-hover:!block bg-[#152339b3] w-full mt-2">
                 <li className="text-[16px] leading-[26px] font-medium text-white text-center pt-[12px] hover:text-primaryBlue">
                   <Link
-                    href={"/vaioni-group"}
-                    aria-label="redirect to vaioni-group page"
+                    href={"/"}
+                    aria-label="redirect to case study 1 page"
                   >
-                    Vaioni Group
+                    Case Study 1
                   </Link>
                 </li>
                 <li className="text-[16px] leading-[26px] font-medium text-white text-center pt-[12px] hover:text-primaryBlue">
                   <Link
-                    href={"/shoppertainment-management"}
-                    aria-label="redirect to shoppertainment page"
+                    href={"/"}
+                    aria-label="redirect to case study 2 page"
                   >
-                    Shoppertainment Management
+                    Case Study 2
                   </Link>
                 </li>
                 <li className="text-[16px] leading-[26px] font-medium text-white text-center py-[12px] hover:text-primaryBlue">
-                  <Link href={"/sbfm"} aria-label="redirect to sbfm page">
-                    SBFM
+                  <Link href={"/"} aria-label="redirect to case study 3 page">
+                    Case Study 3
                   </Link>
                 </li>
               </ul>

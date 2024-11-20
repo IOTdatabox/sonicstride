@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 const Page = () => {
   return (
     <>
-      <div className="w-full bg-[url('/img/contact/contact-hero-bg.png')] bg-cover bg-no-repeat bg-[45%_0%] sm:bg-[91%_0%] xl:bg-[0%_0%] ">
+      <div className="w-full bg-[url('/img/home/dark-gradient.jpg')] bg-cover bg-no-repeat bg-[45%_0%] sm:bg-[91%_0%] xl:bg-[0%_0%] ">
         <Header />
         <ContactAbout />
       </div>

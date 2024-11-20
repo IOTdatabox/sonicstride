@@ -68,9 +68,8 @@ const Footer = () => {
               </h4>
               <ul className="text-lightGrey lato-thin text-[16px] leading-[24px]">
                 <li className="mt-2">
-                  <span>Zhushan Township</span> <br />
-                  <span>Nantou County, Taiwan, </span> <br />
-                  <span>557</span>
+                  <span>No.26, Ln. 218, Sec. 5, Roosevelt Rd., Wenshan Dist.,</span> <br />
+                  <span>Taipei City, Taiwan, 116 </span> <br />
                 </li>
               </ul>
             </div>
@@ -108,7 +107,7 @@ const Footer = () => {
           <div className="mt-[40px] lg:mt-0">
             <ul className="flex flex-col text-lightGrey text-[16px] lg:text-[17px] leading-[25px] gap-[13px] cursor-pointer">
               <li className="hover:text-primaryBlue">
-                <Link href={"/about"} aria-label="redirect to about page">
+                <Link href={"/"} aria-label="redirect to about page">
                   ABOUT US
                 </Link>
               </li>
@@ -189,7 +188,7 @@ const Footer = () => {
                 aria-label="redirect to linkedin profile"
               >
                 <img
-                  src="/img/social/linkedin.svg"
+                  src="/img/linkedin.svg"
                   alt="Linkedin"
                   loading="lazy"
                 />

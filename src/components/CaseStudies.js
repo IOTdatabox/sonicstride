@@ -12,7 +12,7 @@ const caseStudies = [
     title: "Case Study 1 Title",
     content:
       "Here is the short description of Case Study 1",
-    link: "/vaioni-group",
+    link: "/",
   },
   {
     image: "/img/home/case-studies-2.svg",
@@ -20,7 +20,7 @@ const caseStudies = [
     title: "Case Study 2 Title",
     content:
       "Here is the short description of Case Study 2",
-    link: "/shoppertainment-management",
+    link: "/",
   },
   {
     image: "/img/home/case-studies-3.svg",
@@ -28,7 +28,7 @@ const caseStudies = [
     title: "Case Study 3 Title",
     content:
       "Here is the short description of Case Study 3",
-    link: "/sbfm",
+    link: "/",
   },
 ];
 
