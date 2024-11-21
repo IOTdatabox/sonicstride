@@ -1,7 +1,7 @@
 import Image from "next/image"
 import FooterLogo from '/public/images/FooterLogo.png'
-import Instagram from '/public/images/instagram.png'
-import Facebook from '/public/images/facebook.png'
+import Instagram from '/public/images/Instagram.png'
+import Facebook from '/public/images/Facebook.png'
 import GooglePlus from '/public/images/Google-Plus.png'
 import { fonts } from '@/utils/constants/Font'
 import Link from "next/link"

@@ -7,7 +7,7 @@ import Avatar7 from '/public/images/Avatar7.png'
 import { fonts } from '@/utils/constants/Font'
 import FooterLogo from '/public/images/FooterLogo.png'
 import Link from 'next/link'
-import Linkedin from '/public/images/linkedin.png'
+import Linkedin from '/public/images/Linkedin.png'
 
 
 const TeamMembers = () => {
