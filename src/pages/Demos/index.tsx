@@ -35,7 +35,7 @@ const Demos = () => {
 
     return (
         <div className="bg-[url('/images/Rectangle5.png')] bg-cover bg-no-repeat">
-            <div className="max-w-[1440px] mx-auto pt-[60px] px-[86px]">
+            <div className="max-w-[1440px] mx-auto pt-[60px] px-[10px] md:px-[86px]">
                 <div className="flex flex-row justify-between items-center">
                     <Link href={'/'}>
                         <Image
@@ -49,12 +49,12 @@ const Demos = () => {
                         </div>
                     </Link>
                 </div>
-                <div className="pt-[440px] pb-[200px]">
-                    <div className="grid grid-cols-2 gap-y-[100px] justify-between">
+                <div className="pt-[100px] md:pt-[440px] pb-[100px] md:pb-[200px]">
+                    <div className="grid md:grid-cols-2 gap-y-[100px] justify-center md:justify-between">
                         {
                             DemosData.map((item, index) => (
-                                <div key={index} className="w-[715px] h-[715px] py-[70px] flex flex-col justify-between items-center">
-                                    <div className="w-[430px] h-[430px] bg-white rounded-full flex justify-center items-center">
+                                <div key={index} className="w-[360px] md:w-[715px] h-[360px] md:h-[715px] md:py-[70px] flex flex-col justify-between items-center">
+                                    <div className="w-[300px] md:w-[430px] h-[300px] md:h-[430px] bg-white rounded-full flex justify-center items-center">
                                         {
                                             item.link ? (
                                                 <Link href={item.link} target="_blank">
@@ -64,15 +64,15 @@ const Demos = () => {
                                                     />
                                                 </Link>
                                             ) : (
-                                                <div className={`pt-[40px] flex flex-col gap-[33px] ${fonts.inter.className}`}>
+                                                <div className={`md:pt-[40px] flex flex-col gap-[10px] md:gap-[33px] ${fonts.inter.className}`}>
                                                     <div className="flex flex-row gap-[24px]">
                                                         <Image
                                                             src={BlackLogo}
                                                             alt="BlackLogo"
                                                         />
                                                         <div>
-                                                            <p className="text-black text-[40px] font-semibold leading-[42px] tracking-[0.4px]">sonicstride</p>
-                                                            <p className="text-black text-[32px] font-thin leading-[42px] tracking-[0.32px]">premium artist</p>
+                                                            <p className="text-black text-[32px] md:text-[40px] font-semibold leading-[42px] tracking-[0.4px]">sonicstride</p>
+                                                            <p className="text-black text-[26px] md:text-[32px] font-thin leading-[42px] tracking-[0.32px]">premium artist</p>
                                                         </div>
                                                     </div>
                                                     <p className="text-black text-center text-[20px] font-thin leading-[42px] tracking-[0.2px]">

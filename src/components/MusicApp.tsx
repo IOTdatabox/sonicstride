@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react"
+import { motion, useScroll, useTransform } from "framer-motion"
 import Image from 'next/image'
 import Phone1 from '/public/images/Phone1.png'
 import Phone2 from '/public/images/Phone2.png'
@@ -35,22 +37,64 @@ const MusicApp = () => {
             role: 'Freelance designer - taipei, taiwan'
         },
     ]
+
+    const { scrollY } = useScroll()
+    const [containerRef, setContainerRef] = useState<HTMLDivElement | null>(null)
+
+    const [containerTop, setContainerTop] = useState(0)
+
+    useEffect(() => {
+        if (containerRef) {
+            const rect = containerRef.getBoundingClientRect()
+            setContainerTop(rect.top + window.scrollY)
+        }
+    }, [containerRef])
+
+    const opacity1 = useTransform(
+        scrollY,
+        [containerTop - 300, containerTop + 1000],
+        [1, 0]
+    )
+
+    const opacity2 = useTransform(
+        scrollY,
+        [containerTop - 300, containerTop + 300],
+        [0, 1]
+    )
+
     return (
         <div className={`bg-[url('/images/Rectangle3.png')] bg-cover bg-center ${fonts.lato.className}`}>
-            <div className={`max-w-[1440px] mx-auto`}>
-                <div className="pt-[285px] pl-[280px] pr-[70px] flex flex-row justify-between items-center">
-                    <div className='flex flex-col items-center'>
-                        <Image
-                            src={Phone1}
-                            alt='Phone1'
-                        />
-                        <Image
-                            className='mt-[-180px]'
-                            src={Phone2}
-                            alt='Phone2'
-                        />
+            <div className={`max-w-[1440px] mx-auto px-[5px] md:px-0`}>
+                <div className="pt-0 md:pt-[285px] pl-0 md:pl-[280px] pr-0 md:pr-[70px] flex flex-col md:flex-row justify-between items-center">
+                    <div className="relative w-full hidden md:flex">
+                        <div
+                            ref={setContainerRef}
+                            id="image-container"
+                            className="relative w-full h-[700px] flex items-center justify-center"
+                        >
+                            <motion.div
+                                style={{ opacity: opacity1 }}
+                                className="absolute top-0 left-0"
+                            >
+                                <Image
+                                    className="w-auto h-auto px-[25px]"
+                                    src={Phone1}
+                                    alt="Phone1"
+                                />
+                            </motion.div>
+                            <motion.div
+                                style={{ opacity: opacity2 }}
+                                className="absolute top-0 left-0 mt-[500px]"
+                            >
+                                <Image
+                                    className="w-auto h-auto"
+                                    src={Phone2}
+                                    alt="Phone2"
+                                />
+                            </motion.div>
+                        </div>
                     </div>
-                    <div className='w-[575px] flex flex-col gap-[130px]'>
+                    <div className='w-auto md:w-[575px] flex flex-col gap-[80px] md:gap-[130px] text-center md:text-left'>
                         <p className='text-white font-bold text-[42px] leading-[52px] tracking-[-0.4px]'>
                             {'Introducing Sonicstride, an interactive music Apps.'}
                         </p>
@@ -60,7 +104,7 @@ const MusicApp = () => {
                                     <p className='text-white font-bold text-[29px] leading-[26px] tracking-[2px] uppercase'>
                                         {item.title}
                                     </p>
-                                    <p className='text-white font-normal text-[20px] leading-[26px] tracking-[4px]'>
+                                    <p className='text-white font-normal text-[20px] leading-[26px] tracking-[4px] mt-12'>
                                         {item.description}
                                     </p>
                                 </div>
@@ -68,7 +112,7 @@ const MusicApp = () => {
                         }
                     </div>
                 </div>
-                <div className='pt-[370px] pl-[200px] flex flex-row justify-between'>
+                <div className='pt-[150px] md:pt-[370px] pl-0 md:pl-[200px] flex flex-row justify-between text-center md:text-left'>
                     <div className='w-[470px] flex flex-col gap-[50px] text-[#EBEAED] font-medium text-[20px] leading-[32px]'>
                         <p className='text-[42px] font-bold leading-[52px]'>{'Where Artistry Meets Adaptability'}</p>
                         <p className='text-[22px]'>{'we redefine the way you experience music. Our carefully curated creators and dynamic scenario selection ensure every note resonates with your mood, activity, and style. '}</p>
@@ -82,11 +126,11 @@ const MusicApp = () => {
                         </div>
                     </div>
                 </div>
-                <div className='pt-[200px] pb-[80px] flex flex-col gap-[100px] justify-center items-center'>
+                <div className='pt-[150px] md:pt-[370px] pl-0 md:pl-[200px] flex flex-col md:flex-row justify-between text-center md:text-left'>
                     <p className='text-white font-bold text-[42px] leading-[52px] tracking-[-0.4px]'>
                         {'Testimonials'}
                     </p>
-                    <div className='flex flex-row gap-[40px] justify-between items-center'>
+                    <div className='flex flex-col md:flex-row gap-[40px] justify-between items-center'>
                         {
                             TestimonialsData.map((item, index) => (
                                 <div key={index} className='flex flex-row gap-[20px] items-start'>
@@ -94,7 +138,7 @@ const MusicApp = () => {
                                         src={item.image}
                                         alt='Avatar'
                                     />
-                                    <div className='w-[450px] flex flex-col gap-[30px]'>
+                                    <div className='w-auto md:w-[450px] flex flex-col gap-[30px]'>
                                         <p className='text-white font-medium text-[22px] leading-[32px]'>
                                             {item.text}
                                         </p>

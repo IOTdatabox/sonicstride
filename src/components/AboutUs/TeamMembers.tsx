@@ -46,8 +46,8 @@ const TeamMembers = () => {
     ]
     return (
         <div className="bg-[#141311] py-[120px]">
-            <div className="max-w-[1440px] mx-auto px-[120px]">
-                <div className="w-[708px] flex flex-col">
+            <div className="max-w-[1440px] mx-auto px-[10px] md:px-[120px]">
+                <div className="w-auto md:w-[708px] flex flex-col">
                     <p className="text-white font-bold text-[42px] leading-[52px] tracking-[-0.4px]">
                         {'Team Members'}
                     </p>
@@ -55,7 +55,7 @@ const TeamMembers = () => {
                         {'Our passion drives us to blend code, design, rhythm, and movement, creating experiences that enhance everyday wellbeing.'}
                     </p>
                 </div>
-                <div className={`w-full pt-[80px] grid grid-cols-3 gap-y-[100px] items-center justify-between ${fonts.dm_sans.className}`}>
+                <div className={`w-full pt-[80px] grid md:grid-cols-3 gap-y-[100px] items-center justify-center md:justify-between ${fonts.dm_sans.className}`}>
                     {
                         Members.map((item, index) => (
                             <div key={index} className="flex flex-col gap-[20px]">
@@ -89,7 +89,7 @@ const TeamMembers = () => {
                         ))
                     }
                 </div>
-                <div className={`pt-[70px] flex flex-col justify-end items-end text-white text-right font-medium text-[22px] leading-[36px] ${fonts.lato.className}`}>
+                <div className={`pt-[70px] flex flex-col justify-center md:justify-end items-center md:items-end text-white text-center md:text-right font-medium text-[22px] leading-[36px] ${fonts.lato.className}`}>
                     <p>
                         {'Have a vision to share?'}
                     </p>

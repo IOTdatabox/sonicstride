@@ -31,15 +31,15 @@ const Footer = () => {
     ]
     return (
         <div className={`bg-[#141311] ${fonts.lato.className}`}>
-            <div className="max-w-[1440px] mx-auto px-[120px] py-[85px] flex flex-col gap-[20px]">
+            <div className="max-w-[1440px] mx-auto px-[10px] md:px-[120px] py-[20px] md:py-[85px] flex flex-col gap-[10px] md:gap-[20px]">
                 <div className="flex flex-row justify-between items-center">
-                    <Link href="/">
+                    <Link href="/" className="hidden md:flex">
                         <Image
                             src={FooterLogo}
                             alt="FooterLogo"
                         />
                     </Link>
-                    <div className="flex flex-row gap-[50px]">
+                    <div className="flex flex-row gap-[25px] md:gap-[50px]">
                         {
                             Links.map((item, index) => (
                                 <Link href={item.link} key={index}>
@@ -51,8 +51,8 @@ const Footer = () => {
                         }
                     </div>
                 </div>
-                <div className="h-[2px] bg-white"></div>
-                <div className="flex flex-row justify-between">
+                <div className="h-[2px] bg-white hidden md:flex"></div>
+                <div className="flex flex-col md:flex-row justify-between gap-[10px]">
                     <p className="text-white font-normal text-[16px] leading-[26px]">
                         {'© 2024 Sonicstride. All rights reserved.'}
                     </p>

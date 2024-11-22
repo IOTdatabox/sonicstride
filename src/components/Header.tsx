@@ -13,7 +13,7 @@ const Header = () => {
                         alt="logo"
                     />
                 </Link>
-                <div className={`flex flex-row gap-[70px] text-white ${fonts.lato.className}`}>
+                <div className={`hidden md:flex flex-row gap-[70px] text-white ${fonts.lato.className}`}>
                     <p>Home</p>
                     <Link href={`/AboutUs`}>
                         <p>About us</p>
@@ -26,6 +26,15 @@ const Header = () => {
                     <div className="w-[160px] h-[40px] flex justify-center items-center bg-[#FAFAFA] border-[2px] border-[#D6602F] rounded-[100px] text-[#3A3A38] font-medium">
                         <p className={`${fonts.dm_sans.className}`}>Buy us a coffee</p>
                     </div>
+                </Link>
+            </div>
+            <div className={`flex md:hidden pb-[20px] flex-row gap-[70px] justify-center text-white ${fonts.lato.className}`}>
+                <p>Home</p>
+                <Link href={`/AboutUs`}>
+                    <p>About us</p>
+                </Link>
+                <Link href={'/Plans'}>
+                    <p>Plans</p>
                 </Link>
             </div>
         </div>
