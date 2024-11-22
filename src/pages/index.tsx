@@ -5,7 +5,6 @@ import MusicApp from "@/components/MusicApp";
 import Launching from "@/components/Launching";
 import Footer from "@/components/Footer";
 
-
 export default function Home() {
   return (
     <div className={``}>
