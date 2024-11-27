@@ -18,7 +18,7 @@ const Experience = () => {
                 <p className={`text-center text-white font-bold uppercase text-[16px] leading-[26px] tracking-[2px] shadow-[3px_4px_5.8px_rgba(255,255,255,0.91)] ${fonts.noto_sans_tc.className}`}>
                     {'Sync your rhythm , find your flow'}
                 </p>
-                <p className={`w-auto md:w-[1169px] text-center text-white font-bold text-[58px] leading-[70px] tracking-[-1px] ${fonts.lato.className}`}>
+                <p className={`w-auto xl:w-[1169px] px-[20px] xl:px-0 text-left md:text-center text-white font-bold text-[58px] leading-[70px] tracking-[-1px] ${fonts.lato.className}`}>
                     {'Experience music that adapts to your physical and mental rhythms'}
                 </p>
                 <div className='mt-[80px] w-[245px] h-[50px] flex justify-center items-center bg-[#FAFAFA] rounded-[50px]'>

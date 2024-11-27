@@ -50,11 +50,11 @@ const Demos = () => {
                     </Link>
                 </div>
                 <div className="pt-[100px] md:pt-[440px] pb-[100px] md:pb-[200px]">
-                    <div className="grid md:grid-cols-2 gap-y-[100px] justify-center md:justify-between">
+                    <div className="grid lg:grid-cols-2 gap-y-[100px] justify-center lg:justify-between">
                         {
                             DemosData.map((item, index) => (
-                                <div key={index} className="w-[360px] md:w-[715px] h-[360px] md:h-[715px] md:py-[70px] flex flex-col justify-between items-center">
-                                    <div className="w-[300px] md:w-[430px] h-[300px] md:h-[430px] bg-white rounded-full flex justify-center items-center">
+                                <div key={index} className={`py-0 md:py-[70px] flex flex-col justify-between items-center`}>
+                                    <div className="w-[300px] lg:w-[430px] h-[300px] lg:h-[430px] bg-white rounded-full flex justify-center items-center">
                                         {
                                             item.link ? (
                                                 <Link href={item.link} target="_blank">

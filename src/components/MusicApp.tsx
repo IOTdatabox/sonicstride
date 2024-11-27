@@ -65,7 +65,7 @@ const MusicApp = () => {
     return (
         <div className={`bg-[url('/images/Rectangle3.png')] bg-cover bg-center ${fonts.lato.className}`}>
             <div className={`max-w-[1440px] mx-auto px-[5px] md:px-0`}>
-                <div className="pt-0 md:pt-[285px] pl-0 md:pl-[280px] pr-0 md:pr-[70px] flex flex-col md:flex-row justify-between items-center">
+                <div className="pt-0 md:pt-[285px] pl-0 md:pl-[80px] xl:pl-[280px] pr-0 md:pr-[70px] flex flex-col md:flex-row justify-between items-center">
                     <div className="relative w-full hidden md:flex">
                         <div
                             ref={setContainerRef}
@@ -100,7 +100,7 @@ const MusicApp = () => {
                         </p>
                         {
                             appData.map((item, index) => (
-                                <div key={index} className='flex flex-col gap-[10px]'>
+                                <div key={index} className='flex flex-col gap-[10px] text-left pl-[10px]'>
                                     <p className='text-white font-bold text-[29px] leading-[26px] tracking-[2px] uppercase'>
                                         {item.title}
                                     </p>
@@ -117,17 +117,17 @@ const MusicApp = () => {
                         <p className='text-[42px] font-bold leading-[52px]'>{'Where Artistry Meets Adaptability'}</p>
                         <p className='text-[22px]'>{'we redefine the way you experience music. Our carefully curated creators and dynamic scenario selection ensure every note resonates with your mood, activity, and style. '}</p>
                         <div className='flex flex-col gap-[15px]'>
-                            <p className='text-[18px] pl-[25px]'>{'Elite Creator Collaboration'}</p>
+                            <p className='text-[22px] font-bold pl-[25px]'>{'Elite Creator Collaboration'}</p>
                             <p>{'Collaborate with our wxclusive lineup of premium creators , from experimrntal sound to profession musicians.'}</p>
                         </div>
                         <div className='flex flex-col gap-[15px]'>
-                            <p className='text-[18px] pl-[25px]'>{'Adaptive Mode Selector'}</p>
+                            <p className='text-[sspx] font-bold pl-[25px]'>{'Adaptive Mode Selector'}</p>
                             <p>{`Music was recommended based on your scenario , whether you're seeking inspiration, focus, or relaxation, we've got you covered.`}</p>
                         </div>
                     </div>
                 </div>
-                <div className='pt-[150px] md:pt-[370px] pl-0 md:pl-[200px] flex flex-col md:flex-row justify-between text-center md:text-left'>
-                    <p className='text-white font-bold text-[42px] leading-[52px] tracking-[-0.4px]'>
+                <div className='pt-[150px] md:pt-[370px] pb-[100px] pl-0 md:px-[50px] lg:px-[100px] flex flex-col gap-[60px] justify-between text-center md:text-left'>
+                    <p className='text-white font-bold text-[42px] leading-[52px] text-center tracking-[-0.4px]'>
                         {'Testimonials'}
                     </p>
                     <div className='flex flex-col md:flex-row gap-[40px] justify-between items-center'>
@@ -138,7 +138,7 @@ const MusicApp = () => {
                                         src={item.image}
                                         alt='Avatar'
                                     />
-                                    <div className='w-auto md:w-[450px] flex flex-col gap-[30px]'>
+                                    <div className='w-auto lg:w-[450px] flex flex-col gap-[30px] text-left'>
                                         <p className='text-white font-medium text-[22px] leading-[32px]'>
                                             {item.text}
                                         </p>
