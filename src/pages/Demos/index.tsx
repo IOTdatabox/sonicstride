@@ -34,7 +34,7 @@ const Demos = () => {
     ]
 
     return (
-        <div className="bg-[url('/images/Rectangle5.png')] bg-cover bg-no-repeat">
+        <div className="bg-[url('/images/demos.gif')] bg-cover bg-no-repeat">
             <div className="max-w-[1440px] mx-auto pt-[60px] px-[10px] md:px-[86px]">
                 <div className="flex flex-row justify-between items-center">
                     <Link href={'/'}>

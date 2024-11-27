@@ -1,7 +1,12 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
-const ShaderGradientBackground: React.FC = () => {
+interface props {
+  width: number,
+  height: number
+}
+
+const ShaderGradientBackground: React.FC<props> = ({width, height}) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   useEffect(() => {
@@ -10,9 +15,13 @@ const ShaderGradientBackground: React.FC = () => {
 
     // Create the scene, camera, and renderer
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer({ canvas: canvasRef.current });
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    const camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 0.1, 1000);
+    // const renderer = new THREE.WebGLRenderer({ canvas: canvasRef.current });
+    const renderer = new THREE.WebGLRenderer({ 
+      canvas: canvasRef.current,
+      antialias: true
+    });
+    renderer.setSize(window.innerWidth, window.innerHeight); 
 
     // Move camera back to view the gradient plane
     camera.position.z = 1;
@@ -85,11 +94,9 @@ const ShaderGradientBackground: React.FC = () => {
     <canvas
       ref={canvasRef}
       style={{
-        position: 'absolute',
         top: 0,
         left: 0,
-        width: '100vw',
-        height: '100vh',
+      
       }}
     />
   );

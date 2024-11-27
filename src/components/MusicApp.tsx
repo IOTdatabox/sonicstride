@@ -63,14 +63,14 @@ const MusicApp = () => {
     )
 
     return (
-        <div className={`bg-[url('/images/Rectangle3.png')] bg-cover bg-center ${fonts.lato.className}`}>
+        <div className={`bg-[url('/images/musicapp.gif')] bg-cover bg-center ${fonts.lato.className}`}>
             <div className={`max-w-[1440px] mx-auto px-[5px] md:px-0`}>
                 <div className="pt-0 md:pt-[285px] pl-0 md:pl-[80px] xl:pl-[280px] pr-0 md:pr-[70px] flex flex-col md:flex-row justify-between items-center">
                     <div className="relative w-full hidden md:flex">
                         <div
                             ref={setContainerRef}
                             id="image-container"
-                            className="relative w-full h-[700px] flex items-center justify-center"
+                            className="relative w-full h-[1180px] flex items-center justify-center"
                         >
                             <motion.div
                                 style={{ opacity: opacity1 }}
@@ -94,7 +94,7 @@ const MusicApp = () => {
                             </motion.div>
                         </div>
                     </div>
-                    <div className='w-auto md:w-[575px] flex flex-col gap-[80px] md:gap-[130px] text-center md:text-left'>
+                    <div className='w-auto md:w-[850px] flex flex-col gap-[80px] md:gap-[130px] text-center md:text-left'>
                         <p className='text-white font-bold text-[42px] leading-[52px] tracking-[-0.4px]'>
                             {'Introducing Sonicstride, an interactive music Apps.'}
                         </p>
@@ -130,7 +130,7 @@ const MusicApp = () => {
                     <p className='text-white font-bold text-[42px] leading-[52px] text-center tracking-[-0.4px]'>
                         {'Testimonials'}
                     </p>
-                    <div className='flex flex-col md:flex-row gap-[40px] justify-between items-center'>
+                    <div className='flex flex-col md:flex-row gap-[40px] justify-between'>
                         {
                             TestimonialsData.map((item, index) => (
                                 <div key={index} className='flex flex-row gap-[20px] items-start'>
@@ -138,7 +138,7 @@ const MusicApp = () => {
                                         src={item.image}
                                         alt='Avatar'
                                     />
-                                    <div className='w-auto lg:w-[450px] flex flex-col gap-[30px] text-left'>
+                                    <div className='w-auto flex flex-col gap-[30px] text-left'>
                                         <p className='text-white font-medium text-[22px] leading-[32px]'>
                                             {item.text}
                                         </p>

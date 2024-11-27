@@ -39,7 +39,7 @@ const Footer = () => {
                             alt="FooterLogo"
                         />
                     </Link>
-                    <div className="flex flex-row gap-[25px] md:gap-[50px]">
+                    <div className="flex flex-col lg:flex-row gap-[12px] lg:gap-[48px]">
                         {
                             Links.map((item, index) => (
                                 <Link href={item.link} key={index}>
